@@ -1,0 +1,178 @@
+/* Синяя шапка  */
+.header {
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+.header__top {
+  padding: 18px 0;
+  color: #fff;
+  background-color: #00122f;
+}
+
+.header__title {
+  float: left;
+  margin: 0;
+  max-width: 80%;
+
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.header__link {
+  text-decoration: underline;
+}
+
+.header__current-datetime {
+  float: right;
+}
+
+/* Средний блок в шапке */
+.header__bottom {
+  padding-top: 38px;
+  background-color: #fff;
+}
+
+.header__logo {
+  display: inline-block;
+  
+  width: 120px;
+  height: 40px;
+  margin-right: 56px;
+  
+  vertical-align: middle;
+}
+
+.city-header {
+  display: inline-block;
+  margin-right: 44px;
+  padding-right: 18px;
+
+  vertical-align: middle;
+  color: #448ccb;
+  
+  background: url("../images/arrow.png") no-repeat;
+  background-position: right center;
+}
+
+.city-header__choice {
+  min-width: 150px;
+  border-bottom: 1px dashed #448ccb;
+}
+
+.header__datetime {
+  margin-right: 25px;
+  min-width: 260px;
+}
+
+.header__date {
+  display: inline-block;
+  margin-right: 28px;
+
+  vertical-align: middle;
+  letter-spacing: -0.32px;
+  color: #91919f;
+}
+
+.header__time {
+  display: inline-block;
+  padding-left: 26px;
+  
+  vertical-align: middle;
+  letter-spacing: -0.32px;
+  color: #91919f;
+
+  background-image: url("../images/icon-time.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.header__weather {
+  display: inline-block;
+  margin-right: 40px;
+  padding-left: 40px;
+  
+  line-height: 21px;
+  letter-spacing: -0.32px;
+  vertical-align: middle;
+  color: #91919f;
+
+  background-image: url("../images/icon-weather.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.search-header {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+} 
+
+.search-header__field {
+  padding-left: 21px;
+  padding-right: 50px;
+  height: 45px;
+  width: 320px;
+
+  font-size: 14px;
+  
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 100px;
+}
+
+.search-header__field:active,  
+.search-header__field:focus {
+  outline: 0;
+  outline-offset: 0;
+  border: 1px solid #f3f3f3;
+  background-color: #fff;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.search-header__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 45px;
+  height: 45px;
+  
+  background: #f3f3f3 url("../images/search.png") no-repeat center;
+  border: none;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+/* Меню */
+.nav {
+  padding-top: 35px;
+}
+
+.nav__list {
+  padding-left: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.nav__item {
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+  letter-spacing: -0.6px;
+}
+
+.nav__item::before {
+  content: "/";
+  position: absolute;
+  top: 0;
+  right: -27px;
+  display: inline-block;
+  
+  color: #91919f;
+}
+
+.nav__item:last-child::before {
+  content: none;
+}

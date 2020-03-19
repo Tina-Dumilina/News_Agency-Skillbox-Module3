@@ -1,0 +1,56 @@
+/* Изменяем стандартную блочную модель документа. Свойства width и height задают размеры не содержимого, а размеры блока, то есть в width/height входят также margin, padding и border. */
+html {
+  box-sizing: border-box;
+}
+
+/* Подключаем наследование для всех элементов и псевдоэлементов */
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+  min-width: 1040px; /* Устанавливает минимальную ширину всей страницы, которая равна ширине центровщика и вертикального скролла*/
+  margin: 0; /* Убирает белые поля у страницы */
+  background-color: #f9f9f9; /* Устанавливает фоновый цвет страницы*/
+  font-family: "Arial", sans-serif; /* Основное семейство шрифтов на странице*/
+  font-size: 16px; /* Основной размер шрифта страницы */
+  line-height: 20px; /* Высота строки зависит от браузера. Обычно равна примерно 1.2 */
+  color: #000; /* Основной цвет шрифта */
+}
+
+body.modal-active {
+  overflow: hidden; /* Предотвращает появление белых полей у страницы при появлении модального окна */
+}
+
+img {
+	max-width: 100%; /* Изображения растягиваются на всю ширину контейнера, но не выходят за его пределы */
+}
+
+a {
+	text-decoration: none; /* Убирает подчеркивание у ссылок */
+	color: inherit; /* Ссылки не наследуют цвет, переопределяем свойство */
+}
+
+.visually-hidden {
+  position: absolute !important; /* вырывает элемент из потока */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); /* обрезает элемент до нуля */
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.clearfix::after { /* отмена действия флоат */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.fixed-container { /* блок-центровщик расположим по центру */
+  width: 1000px;
+  margin: 0 auto;
+}

@@ -1,0 +1,129 @@
+.footer {
+  padding: 55px 0;
+  color: #fff;
+  background-color: #00122f;
+}
+
+/* Левая колонка футера */
+.nav-footer {
+  float: left;
+  margin-right: 176px;
+  width: 258px;
+}
+
+.nav-footer__list {
+  padding: 0;
+  margin: 0;
+  columns: 2;
+  list-style: none;
+}
+
+.nav-footer__item {
+  margin-bottom: 12px;
+}
+
+.nav-footer__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Центральная колонка футера */
+.footer__about {
+  float: left;
+  padding-top: 3px;
+}
+
+.about-footer__list {
+  columns: 1;
+}
+
+.footer__logo {
+  margin-bottom: 18px;
+}
+
+/* Правая колонка футера */
+.footer__socials {
+  float: right;
+}
+
+.socials__list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 38px;
+
+  list-style: none;
+}
+
+.socials__item {
+  display: inline-block;
+  margin-right: 17px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.socials__link_vk {
+  background: url("../images/icon-vk.png") no-repeat center;
+}
+
+.socials__link_fb {
+  background: url("../images/icon-fb.png") no-repeat center;
+}
+
+.socials__link_tw {
+  background: url("../images/icon-twitter.png") no-repeat center;
+}
+
+.socials__link_ig {
+  background: url("../images/icon-instagram.png") no-repeat center;
+}
+
+.footer__contacts {
+  padding: 0;
+  margin: 0;
+
+  font-size: 18px;
+  font-style: normal;
+
+  list-style: none;
+}
+
+.footer__contact {
+  margin-bottom: 26px;
+}
+
+.footer__contact:last-child {
+  margin-bottom: 0;
+}
+
+.footer__contact_tel {
+  padding-left: 35px;
+  background: url("../images/icon-phone.png") no-repeat left center;
+}
+
+.footer__contact_email {
+  padding-left: 35px;
+  background: url("../images/icon-email.png") no-repeat left center;
+}
+
+/* Копирайт */
+.footer__copyright {
+  margin: 0;
+  padding: 15px 0;
+
+  text-align: center;
+  font-size: 14px;
+  color: #4c586d;
+
+  background-color: #00122f;
+  border-top: 1px solid #4c586d;
+}
